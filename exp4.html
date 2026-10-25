@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            text-align: center;
+            border-top: 3px solid black;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 14px;
+        }
+
+        form {
+            font-size: 12px;
+        }
+
+        label {
+            display: inline-block;
+            width: 85px;
+            text-align: right;
+        }
+
+        input, select {
+            width: 108px;
+            box-sizing: border-box;
+            font-size: 11px;
+        }
+
+        textarea {
+            width: 220px;
+            height: 40px;
+            box-sizing: border-box;
+        }
+
+        button {
+            font-family: "Times New Roman", serif;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Hotel Room Booking Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullname" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <br><br>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <br><br>
+
+        <label for="room">Room Type:</label>
+        <select id="room" name="room" required>
+            <option value="Single">Single Room</option>
+            <option value="Double">Double Room</option>
+            <option value="Deluxe">Deluxe Room</option>
+            <option value="Suite">Suite</option>
+        </select>
+        <br><br>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+        <br><br>
+
+        <label for="requests" style="width: auto; text-align: center;">
+            Special Requests:
+        </label>
+        <br>
+
+        <textarea id="requests" name="requests"></textarea>
+        <br><br>
+
+        <button type="submit">Book Now</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
+
